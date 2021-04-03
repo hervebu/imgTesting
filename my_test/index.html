@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>IMAGE RWANDA | Rwanda nziza campain.</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&amp;family=Roboto:wght@400;700;900&amp;display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='all' href='some.css'>
+    <script src="https://kit.fontawesome.com/d881a9c703.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class='navbar'>
+        <a href=''><img class="logo" src='https://www.image.rw/wp-content/themes/gaia/images/logo.png'></a>
+        <div class='nav-btns'>
+            <ul >
+                <a href='#' class='nav-gallery' onclick='nav_div_swap(".gallery-div")'><li>Gallery</li></a>
+                <a href='#'><li>Terms and conditions</li></a>
+                <a href='#' onclick='nav_div_swap(".footer")'><li>About Us</li></a>
+            </ul>
+        </div>
+        <div class='mobile-nav'>
+            <div class='line1'></div>
+            <div class='line1'></div>
+            <div class='line1'></div>
+        </div>
+
+    </nav>
+
+    <div class='top-div'>
+        <div class='top-sec-1'>
+            <div class='top-div-text'>
+                <span class='text-large'>RWANDA NZIZA</span><br>
+                <span class='text-small'>Branding Rwanda to the world, together.</span>
+            </div>
+        </div>
+        <div class='imigongo-div'></div>
+        <div class='top-sect-2'>
+            <div class='description-body'>
+                Rwanda Nziza is a cross-country journey designed and implemented by Image Rwanda.
+                It aims at discovering, capturing and divulging the various unknown beautiful 
+                sceneries of the Country of a Thousand Hills. This page offers you access to a 
+                limited edition of the first-ever release of photographs taken by our team since 
+                the project launch a few months ago.<br><br> 
+
+                By purchasing your favourite, you not only gain all rights on the same, get to keep
+                that beauty right in your place, but most especially you support the project for it
+                to go on and reach every undiscovered corner of the country. Returns from your 
+                purchases will be used to cover project expenses such as transport, 
+                accommodation and other logistical requirements.<br><br> 
+
+                We travel Rwanda Nziza, will you too? <br><br> 
+    
+            </div>
+            <a class='explore-btn exp-head' onclick='divSwap(".top-div", ".gallery-div")' href='#'>Explore Now</a>
+        </div>
+
+    </div>
+ 
+    <div  class="gallery-div">
+        <div class='div-sub title-sub'>Please select an image to order.</div> 
+            <div class='gallery-flex'>
+
+            </div>
+            <a class='explore-btn to-contact' onclick='divSwap(".gallery-div", ".footer")' href='#'>About us</a>
+    </div>
+     <div id='ordering-div' class="ordering-div">
+         <span class="close">&times;</span><br>
+         <div class='ordering-div-content'>
+            <div class='ordering-details'>
+                <div id='img-title'>'Sunset in Kinunu'</div>
+                <div id='img-location'>Location: <span id='loc-value'>Rusizi</span></div>
+                <div class='size-select'>
+                    Select your option
+                    <div class='flex-boxes'>
+                        <div>
+                            <div class='size-label'>Small size:</div>
+                            <div  class='size-box' id='small-size' tabindex='1' onclick='sizeClick("small")'>
+                                <span>50 X 30 cm</span>
+                                <span>450,000 RWF</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class='size-label'>Medium size:</div>
+                            <div class='size-box' id='medium-size' tabindex='1' onclick='sizeClick("medium")'>
+                                <span>80 X 60 cm</span>
+                                <span>600,000 RWF</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class='size-label'>Large size:</div>
+                            <div  class='size-box' id='large-size' tabindex='1' onclick='sizeClick("large")'>
+                                <span>150 X 70 cm</span>
+                                <span>800,000 RWF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='checkout-val'>Available copies: &nbsp;&nbsp;<span id='no_of_copies'></span>&nbsp;copies</div>
+                    <div class='checkout-val total_label'>Total: <span id='checkout-val'>800,000 RWF</span> Minimum</div>
+                </div>    
+                <label class='terms-conds-label'>
+                    <input type='checkbox' id='terms-conds-checkbox' onclick='checkboxClick()'> 
+                    I accept the <a class='order-terms-conds' href=''>Terms and Conditions</a>
+                </label>
+                <input type='button' id='checkout-btn' value='Proceed to Checkout' onclick='submit_to_checkout()'>
+                <label class='terms-conds-label'>Any special support or question? Click<a class='order-terms-conds' onclick='to_contactForm(".gallery-div", ".contact-us")'> here</a></label>  
+                
+            </div>
+            <div class='large-frame-img'>
+            </div>
+            <div class='medium-frame-img'>
+            </div>
+            <div class='small-frame-img'>
+            </div> 
+         </div>
+         <div class='checkout_div'>
+            <i class="fa fa-arrow-circle-left"></i> 
+            <div class='bill_address_form' >
+                <form action=''>
+                    <span>Billing Details </span><br>
+
+                    <label class='addr_div_label fname_label' >
+                        First name<span class='required_mark'>*</span>
+                        <input type="text" class='address-fields' required >
+                    </label>    
+                    <label class='addr_div_label lname_label'>
+                        Last name<span class='required_mark'>*</span>
+                        <input type="text" class='address-fields' required >
+                    </label>
+                    <label >
+                        Phone number<span class='required_mark'>*</span>
+                        <input class='address-fields' type="tel" style='width: 95%;' required>
+                    </label>
+                    <label>
+                        Email Address<span class='required_mark'>*</span>
+                        <input class='address-fields' type="email" style='width: 95%;' required>
+                    </label>
+                    <label style='margin-top: 5%'>
+                        Additional information<br>
+                        <span style='font-size: 80%;'>order notes(optional)</span>
+                        <input class='address-fields' type="text" style='width: 95%;'>
+                    </label>
+                </form>
+            </div>
+            <div class='img_ordered_details'>
+                    <span>Your order</span>
+                    <table>
+                        <tr>
+                            <td class='tr_label'>image title</td>
+                            <td id='table_img_title'></td>
+                        </tr>
+                        <tr>
+                            <td class='tr_label'>Selected size</td>
+                            <td id='table_img_size'></td>
+                        </tr>
+                        <tr>
+                            <td class='tr_label'>Total amount</td>
+                            <td id='table_img_amount'></td>
+                        </tr>
+                    </table>
+                    <div class='dpo_descr'>
+                        <span>DPO payment Gateway</span>
+                        <img src='https://staging.image.rw/wp-content/plugins/woocommerce-gateway-direct-pay-online//assets/images/logo.svg'>
+                        <p class='dpo_p1'>Pay via DPO Group</p><hr>
+                        <p class='dpo_p2'>Your personal data will be used to process your
+                           order, support your experience througout this website,
+                           and for other purposes described in our <a href='#'>privacy policy</a>
+                        </p>
+                        <button class='order-sbmt-btn'>Place order</button>
+                    </div>
+            </div>
+            
+        </div>  
+    </div> 
+
+    <div class='contact-us'>
+        <h3 id='message-res'></h3>
+        <div class='div-title contact-h'>Contact Us</div>
+        <div class='div-sub'>Any question or special support? Just write us a message!</div>
+        <form id='contact-form'>
+            <label>
+                <span class='input-group'>Name</span><br>
+                <input type='text' class='contact-input' id='name-field' required>
+            </label>
+            <label>
+                <span class='input-group'>Email</span><br>
+                <input type='email' class='contact-input' id='email-field' required>
+            </label>
+            <label>
+                <span class='input-group'>Phone</span><br>
+                <input type='tel' class='contact-input' id='phone-field'>
+            </label>
+            <label>
+                <span class='input-group'>Message</span><br>
+                <textarea  id='message-field' required></textarea>
+            </label>
+            <input type='submit' id='contact-sbmt-btn' value='Send Email'>
+        </form>
+        <a class='explore-btn to-contact' onclick='divSwap(".contact-us", ".footer")' href='#'>About us</a>
+    </div>
+    <footer class='footer'>
+        <div class='footer-div'>
+            <div class='flex box1'>
+                <div class='footer-div footer-flex-title'>ABOUT US</div>
+                <div class='footer-div'>We are Rwanda's Leading Imagery Stock.
+                     We give you access to thousands of Rwanda's 
+                     exclusive collections of Royalty-Free images, 
+                     Videos and Illustrations.
+                </div>
+                <div class='footer-div terms-conds-link'>
+                    <a href='#'><i class='fa fa-info'></i>Terms and Conditions</a>
+
+                </div>
+            </div>
+            <div class='flex box2'>
+                <div class='footer-div footer-flex-title'>VISIT US</div>
+                <div class='loc-map'>
+                    <iframe style ='display: inline-block;'
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d255197.64569118095!2d30.097832!3d-1.968737!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4550ccd8a6504a76!2sIMAGE%20RWANDA!5e0!3m2!1sen!2srw!4v1615977495614!5m2!1sen!2srw"
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+            <div class='flex box3'>
+                <div class='footer-div footer-flex-title'>CONTACT</div>
+                <div class='footer-div contact'><i class='fa fa-home'></i><span>Rwanda, KN 3 Rd, Kigali</span></div>
+                <div class='footer-div contact'><i class='fa fa-envelope'></i><span>info@image.rw</span></div>
+                <div class='footer-div contact'><i class='fa fa-phone'></i><span> +250 788 322 588</span></div>
+                <div class='footer-div contact'><i class='fa fa-phone'></i><span>+250 788 322 579</span></div>
+            </div>
+        </div>
+        <div class='copyright-div'>
+            &copy <script>document.write(new Date().getFullYear())</script> 
+            Copyright:<span class='span-img-rda'> Image Rwanda Ltd.</span></div>
+    </footer> 
+    
+    <script src='some.js'></script>
+</body>
+</html>
